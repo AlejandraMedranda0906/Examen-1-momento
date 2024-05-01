@@ -1,13 +1,13 @@
-import { Evento, Evento2} from "../modelo/evento2";
-function manejoEvento(evento: Evento): void {
+import { Evento, TipEvento} from "../modelo/evento2";
+function manejoEvento1(evento: Evento): void {
   switch (evento.tipo) {
-    case Evento2.Asteroide:
+    case TipEvento.Asteroide:
       console.log(`¡Daño causado por asteroide!: ${evento.peligroso}`);
       break;
-    case Evento2.Aliens:
+    case TipEvento.Aliens:
       console.log(`¡Se aproxima un alien!: ${evento.peligroso}`);
       break;
-    case Evento2.AgujeroNegro:
+    case TipEvento.AgujeroNegro:
       console.log(`¡ Se aproxima un agujero negro!: ${evento.peligroso}`);
       break;
     default:
@@ -15,4 +15,4 @@ function manejoEvento(evento: Evento): void {
   }
 }
 
-export { manejoEvento };
+export { manejoEvento1 };

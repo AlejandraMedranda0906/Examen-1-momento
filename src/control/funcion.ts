@@ -3,7 +3,7 @@ class ColeccionRecursos<T> {
   
     add(recursos: T): void {
       this.recursos.push(recursos);
-      console.log(`Recurso conseguido: ${recursos}`);
+      console.log(`Se obtiene: ${recursos}`);
     }
   
     getAll(): T[] {

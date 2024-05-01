@@ -1,4 +1,3 @@
-//Simula
 enum EventType {
     AsteroidImpact,
     AlienEncounter,

@@ -1,5 +1,5 @@
 function simulacionTiempo(time: number): void {
-    console.log(`Simulando ${time} unidades de tiempo`);
+    console.log(`Simulacion${time} tiempo`);
   }
   
   export { simulacionTiempo };

@@ -1,4 +1,4 @@
-enum planeta2 {
+enum TipoRecurso{
     Agua,
     Oxigeno,
     Minerales,
@@ -6,12 +6,12 @@ enum planeta2 {
   }
   
   class Planeta {
-    constructor(public nombre: string, public tipoRecurso: planeta2, public nivelPeligro: number) {}
+    constructor(public nombre: string, public tipoRecurso: TipoRecurso, public nivelPeligro: number) {}
   
     explore(): void {
       console.log(`Explorando ${this.nombre}...`);
     }
   }
   
-  export { Planeta, planeta2 };
+  export { Planeta, TipoRecurso};
   

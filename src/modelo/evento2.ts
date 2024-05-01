@@ -1,4 +1,4 @@
-enum Evento2 {
+enum TipEvento {
     Asteroide,
     Aliens,
     AgujeroNegro,
@@ -6,13 +6,12 @@ enum Evento2 {
   }
   
   class Evento {
-    constructor(public tipo: Evento2, public peligroso: number) {}
+    constructor(public tipo: TipEvento, public peligroso: number) {}
   
     trigger(): void {
-      console.log(`Evento: ${Evento2[this.tipo]}, Nivel de peligro: ${this.peligroso}`);
-      // Simulate event effects here
+      console.log(`Evento: ${TipEvento[this.tipo]}, Nivel de peligro: ${this.peligroso}`);
     }
   }
   
-  export { Evento, Evento2 };
+  export { Evento, TipEvento };
   

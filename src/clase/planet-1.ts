@@ -1,4 +1,3 @@
-//explora
 enum ResourceType {
     Water,
     Oxygen,
