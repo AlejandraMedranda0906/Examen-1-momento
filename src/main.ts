@@ -1,4 +1,4 @@
-import  Nave_Espacial  from "./vista/nave-espacial";
+import  Nave_Espacial  from "./vista/nave-space";
 import { Planeta, TipoRecurso } from "./modelo/planeta2";
 import { Evento, TipEvento } from "./modelo/evento2";
 import { navegar } from "./control/direccion";
