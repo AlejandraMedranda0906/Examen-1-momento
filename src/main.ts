@@ -9,7 +9,7 @@ import { Evento2 } from "./control/space";
 import { Usuario } from "./control/usuario";
 import { simulacionTiempo } from "./control/simulacion";
 
-// Crear una instancia de la nave espacial
+// Instancia de la nave espacial
 const mySpaceship: Nave_Espacial = {
   salud: 100,
   capacidadDeCarga: 200,
