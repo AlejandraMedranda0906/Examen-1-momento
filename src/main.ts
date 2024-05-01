@@ -14,14 +14,14 @@ const mySpaceship: Nave_Espacial = {
 };
 
 // Creacion de planetas
-const tierra = new Planeta("Tierra", TipoRecurso.Agua, 2);
-const marte = new Planeta("Marte", TipoRecurso.Oxigeno, 5);
-const luna = new Planeta("Luna", TipoRecurso.Minerales, 1);
+const mercurio = new Planeta("mercurio", TipoRecurso.Agua, 2);
+const venus = new Planeta("venus", TipoRecurso.Oxigeno, 5);
+const tierra= new Planeta("tierra", TipoRecurso.Minerales, 1);
 
 // Explorar algunos planetas
+mercurio.explore();
+venus.explore();
 tierra.explore();
-marte.explore();
-luna.explore();
 
 // Crear algunos eventos
 const asteroide = new Evento(TipEvento.Asteroide, 8);
@@ -41,7 +41,7 @@ navegar('Oeste');
 
 simulacionTiempo(5);
 
-const planetaSeleccionado = Usuario([tierra, marte, luna]);
+const planetaSeleccionado = Usuario([tierra, mercurio, venus]);
 console.log(`Ha seleccionado viajar a ${planetaSeleccionado.nombre}`);
 
 const recursoColeccionado = new ColeccionRecursos<string>();
